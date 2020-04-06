@@ -1,10 +1,11 @@
 <template>
   <ul class="post-list">
     <li class="post-item card" v-for="post in posts" :key="post.sys.id">
+      <img :src="post.fields.eyecatch.fields.file.url" alt="">
       <nuxt-link :to="`/entry/${post.sys.id}/`" class="card_title">{{ post.fields.title }}</nuxt-link>
       <small class="readTime">{{ post.fields.readTime }}</small>
       <small>{{ post.fields.category.fields.name　}}</small>
-       <img :src="post.fields.image.fields.file.url" alt="">
+      
     </li>
   </ul>
 </template>
