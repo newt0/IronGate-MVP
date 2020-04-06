@@ -1,8 +1,11 @@
 <template>
   <header class="header">
     <LayoutInside>
-      <p class="header-logo">
+      <!-- <p class="header-logo">
         <nuxt-link to="/"><img src="@/assets/images/logo.svg" alt="医師のためのAIメディア"></nuxt-link>
+      </p> -->
+      <p class="header-logo">
+        <nuxt-link to="/"><p>Iron Gate</p></nuxt-link>
       </p>
       <p class="header-discription">医師のためのAIメディア</p>
     </LayoutInside>

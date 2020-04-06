@@ -33,7 +33,7 @@ export default {
 // ==========================================================================
 html {
   font-size: 12px;
-  // background: $Secondary;
+  background: $Secondary;
   @include min {
     font-size: 16px;
   }

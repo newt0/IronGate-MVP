@@ -1,19 +1,23 @@
 <template>
-  <div class="index">
-    <swiper ref="mySwiper" :options="swiperOptions">
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
-    <swiper-slide>Slide 5</swiper-slide>
-    <div class="swiper-pagination" slot="pagination"></div>
-  </swiper>
+  <div class="index">    
+    <div class="swiper">
+      <swiper ref="mySwiper" :options="swiperOption">
+        <swiper-slide> <nuxt-link to="/"><img src="/image/IMG_2310.png" alt=test class="swiper_visual"></nuxt-link></swiper-slide>
+        <swiper-slide> <img src="/image/IMG_2311.png" alt=test2 class="swiper_visual"></swiper-slide>
+        <swiper-slide> <img src="/image/IMG_2313.png" alt=test3 class="swiper_visual"></swiper-slide>
+        <div slot="pagination" class="swiper-pagination"></div>
+        <div slot="button-prev" class="swiper-button-prev"></div>
+        <div slot="button-next" class="swiper-button-next"></div>
+      </swiper>
+    </div>  
     <PostContainer
       page-type="post"
       :posts="posts"
       :handle-click-more="fetchMore"
     />
+       
   </div>
+  
 </template>
 
 <script>
@@ -24,6 +28,24 @@ import { CONTENT_TYPE_POST } from '@/config/constant'
 export default {
   components: {
     PostContainer
+  },
+   data() {
+    return {
+      swiperOption: {
+        speed: 150,
+        loop: false,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      }
+    }
   },
   computed: {
     ...mapGetters(['posts']),
@@ -49,3 +71,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.swiper_visual {
+  width: 700px;
+  height: auto;
+}
+</style>
