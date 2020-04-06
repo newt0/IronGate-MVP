@@ -22,7 +22,7 @@ const routes = async function() {
 
 const TITLE = '医師のためのAIメディア'
 const DESCRIPTION =
-  'おもしろかった邦画の感想を書いていく予定です。まだ何も書けていないですが、順次追加していきます。たまには邦画も悪くないですよ。'
+  '医師のためのAIメディアです。AI学習方法をメインコンテンツとする予定'
 
 module.exports = {
   mode: 'universal',
