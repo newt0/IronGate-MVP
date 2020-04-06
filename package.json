@@ -1,0 +1,60 @@
+{
+  "name": "houga-blog",
+  "version": "1.0.0",
+  "description": "My first-rate Nuxt.js project",
+  "author": "noplan1989",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "analyze": "nuxt build --analyze",
+    "generate": "nuxt generate",
+    "serve": "http-server ./dist -p 8888",
+    "test": "jest",
+    "format": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/google-analytics": "^2.2.3",
+    "@nuxtjs/pwa": "^3.0.0-beta.19",
+    "@nuxtjs/sitemap": "^2.0.1",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "contentful": "^7.13.1",
+    "cross-env": "^7.0.0",
+    "markdown-it": "^10.0.0",
+    "nuxt": "^2.11.0",
+    "vue-awesome-swiper": "^3.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.1.2",
+    "http-server": "^0.12.1",
+    "husky": "^4.2.1",
+    "jest": "^25.1.0",
+    "jest-puppeteer": "^4.4.0",
+    "lint-staged": "^10.0.6",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "puppeteer": "^2.1.0",
+    "sass-loader": "^8.0.2"
+  }
+}
