@@ -33,6 +33,7 @@ export default {
 // ==========================================================================
 html {
   font-size: 12px;
+  // background: $Secondary;
   @include min {
     font-size: 16px;
   }
@@ -43,5 +44,12 @@ body {
   letter-spacing: 0.14em;
   color: $color-font;
   @include font-serif;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
 }
 </style>

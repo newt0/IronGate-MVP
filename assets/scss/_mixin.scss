@@ -1,0 +1,52 @@
+// color
+$Accent: #4baea8;
+$AwardGold: #c7ab5a;
+$AwardSilver: #a1a1a1;
+$AwardBronze: #a87b40;
+$AwardOther: #4baea8;
+$TextPrimary: #111111;
+$TextSecondary: #969696;
+$PrimaryDark: #111111;
+$Primary: #666666;
+$PrimaryLight: #969696;
+$SecondaryDark: #c6c6c6;
+$Secondary: #f6f6f6;
+$SecondaryLight: #ffffff;
+$Link: #2f80ed;
+$Twitter: #1da1f2;
+$TwitterHover: #0fb7ff;
+$TwitterPress: #0c88d4;
+$TwitterDisable: #c6c6c6;
+$Line: #00c300;
+$LineHover: #00e000;
+$LinePress: #00b300;
+$LineDisable: #c6c6c6;
+$Error: #c00e0e;
+
+@mixin Justify {
+  text-align: justify;
+  text-justify: inter-ideograph; /* IE用 */
+}
+
+// font-family
+$Noto: 'Noto Sans JP', sans-serif;
+
+$Easing: 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+// メディアクエリ設定
+// Media queries
+$screen-lg-min: 769px; //タブレット・PC最小
+$screen-sm-max: 768px; //スマホ最大
+@mixin LScreen {
+  @media screen and (min-width: $screen-lg-min) {
+    @content;
+  }
+}
+@mixin SScreen {
+  @media screen and (max-width: $screen-sm-max) {
+    @content;
+  }
+}
+
+// z-index　←奥 | 手前→
+$Z: main, nav, header, modalBackground, modal, alert;

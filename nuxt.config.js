@@ -21,8 +21,7 @@ const routes = async function() {
 }
 
 const TITLE = '医師のためのAIメディア'
-const DESCRIPTION =
-  '医師のためのAIメディアです。AI学習方法をメインコンテンツとする予定'
+const DESCRIPTION = '医師のためのAIメディアです。AI学習方法をメインコンテンツとする予定'
 
 module.exports = {
   mode: 'universal',
@@ -94,7 +93,8 @@ module.exports = {
   styleResources: {
     scss: [
       './assets/scss/foundation/_variables.scss',
-      './assets/scss/foundation/_mixin.scss'
+      './assets/scss/foundation/_mixin.scss',
+      '~/assets/scss/_mixin.scss'
     ]
   },
   generate: {

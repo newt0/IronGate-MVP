@@ -7,7 +7,10 @@
     <div class="entry-trailer" v-if="post.fields.trailerId">
       <iframe width="480" height="270" :src="`https://www.youtube.com/embed/${post.fields.trailerId}?controls=2`" frameborder="0" allowfullscreen></iframe>
     </div>
+    <img :src="post.fields.image.fields.file.url" alt="">
+     
   </div>
+ 
 </template>
 
 <script>
