@@ -5,7 +5,7 @@
       :posts="posts"
       :handle-click-more="fetchMore"
     />
-       <div class="walkthrough">
+       <!-- <div class="walkthrough">
         <swiper ref="mySwiper" :options="swiperOption">
           <swiper-slide> <nuxt-link to="/"><img src="/image/IMG_2310.png" alt=test class="walkthrough_visual"></nuxt-link></swiper-slide>
           <swiper-slide> <img src="/image/IMG_2311.png" alt=test2 class="walkthrough_visual"></swiper-slide>
@@ -14,6 +14,9 @@
           <div slot="button-prev" class="swiper-button-prev"></div>
           <div slot="button-next" class="swiper-button-next"></div>
         </swiper>
+      </div>   -->
+      <div class="walkthrough">
+        <nuxt-link to="/"><img src="/image/IMG_2313.png" alt=test class="walkthrough_visual"></nuxt-link>
       </div>  
   </div>
   

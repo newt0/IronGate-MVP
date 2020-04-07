@@ -11,7 +11,7 @@
         <a href="/privacy">privacy</a>
       </li>
       <li class="footer_item">
-        <a :href="contactFormUrl">contact</a>
+        <a href="">contact</a>
       </li>
     </ul>
   </footer>
