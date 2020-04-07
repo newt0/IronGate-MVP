@@ -1,12 +1,6 @@
 # 医師のためのAIメディア
 
-[Contentful](https://www.contentful.com)と[Nuxt.js](https://ja.nuxtjs.org)で構築したブログです。  
-ブログを作って満足してしまったので、記事はまだ全部（仮）です。  
-
-https://blog.houga.cc
-
 ## 使い方
-Contentfulのアクセストークンを環境変数に設定しないと動きませんが参考までに。
 
 ```
 # インストール

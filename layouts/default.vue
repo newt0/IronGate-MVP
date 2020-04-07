@@ -2,7 +2,9 @@
   <div class="container">
     <CommonHeader />
     <GlobalNavigation />
-    <TheMain />
+    <div class="main">
+      <TheMain />
+    </div>
     <CommonFooter />
     <TheError v-if="error" :message="error" />
   </div>
@@ -44,6 +46,14 @@ html {
   position: relative;
   @include LScreen {
     font-size: 10px;
+  }
+}
+.main {
+  position: relative;
+  padding: (100 / 750 * 100vw) 0 (240 / 750 * 100vw);
+  z-index: index($Z, main);
+  @include LScreen {
+    padding: 100px 0 40px;
   }
 }
 body {

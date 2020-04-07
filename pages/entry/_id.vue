@@ -4,10 +4,7 @@
     <p class="entry-date">{{ releaseDate }}</p>
     <div class="entry-body" v-if="renderedMd" v-html="renderedMd"></div>
     <TagList class="entry-tag" :tags="post.fields.tags" />
-    <div class="entry-trailer" v-if="post.fields.trailerId">
-      <iframe width="480" height="270" :src="`https://www.youtube.com/embed/${post.fields.trailerId}?controls=2`" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <img :src="post.fields.image.fields.file.url" alt="">
+    <!-- <img :src="post.fields.image.fields.file.url" alt=""> -->
      
   </div>
  

@@ -1,7 +1,5 @@
 <template>
   <div class="index">   
-    <br>
-    <br> 
     <PostContainer
       page-type="post"
       :posts="posts"
