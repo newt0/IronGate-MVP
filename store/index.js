@@ -25,7 +25,8 @@ const createStore = () =>
       postId: null,
       tagIds: [],
       tagId: null,
-      error: null
+      error: null,
+      isGlobalMenuOpen: false
     },
     getters: {
       posts(state) {
@@ -42,6 +43,9 @@ const createStore = () =>
       },
       tag(state) {
         return state.tagId ? state.entities.tag[state.tagId] : null
+      },
+      isGlobalMenuOpen(state, payload) {
+        return state.isGlobalMenuOpen
       }
     },
     actions: {
@@ -87,6 +91,10 @@ const createStore = () =>
         } catch (e) {
           commit('setNetwordError')
         }
+      },
+      toggleGlobalMenuOpen({ state, commit }) {
+        const isGlobalMenuOpen = !state.isGlobalMenuOpen
+        commit('setGlobalMenuOpen', isGlobalMenuOpen)
       }
     },
     mutations: {
@@ -137,6 +145,9 @@ const createStore = () =>
       },
       setNetwordError(state) {
         state.error = '通信の調子が悪いようで・・・'
+      },
+      setGlobalMenuOpen(state, payload) {
+        state.isGlobalMenuOpen = payload
       }
     }
   })

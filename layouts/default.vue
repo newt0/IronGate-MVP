@@ -1,8 +1,9 @@
 <template>
   <div class="container">
-    <TheHeader />
+    <CommonHeader />
+    <GlobalNavigation />
     <TheMain />
-    <TheFooter />
+    <CommonFooter />
     <TheError v-if="error" :message="error" />
   </div>
 </template>
@@ -13,13 +14,19 @@ import TheHeader from '@/layouts/partial/TheHeader'
 import TheMain from '@/layouts/partial/TheMain'
 import TheFooter from '@/layouts/partial/TheFooter'
 import TheError from '@/layouts/partial/TheError'
+import CommonFooter from '@/layouts/partial/CommonFooter'
+import CommonHeader from '@/layouts/partial/CommonHeader'
+import GlobalNavigation from '~/components/GlobalNavigation.vue'
 
 export default {
   components: {
     TheHeader,
     TheMain,
     TheFooter,
-    TheError
+    TheError,
+    CommonFooter,
+    CommonHeader,
+    GlobalNavigation
   },
   computed: {
     ...mapState(['error'])

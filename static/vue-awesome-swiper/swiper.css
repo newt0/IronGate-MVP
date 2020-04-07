@@ -29,7 +29,7 @@
 .swiper-button-disabled {
   display: none;
 }
-.swiper-button-prev {
+/* .swiper-button-prev {
   opacity: 1;
   background:url(/img/arrow_left-walkthrough.svg) no-repeat center;
   background-size: calc(16 / 750 * 100vw) auto;
@@ -66,4 +66,4 @@
     top: 300px;
   }
  
-}
+} */

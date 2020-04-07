@@ -48,5 +48,17 @@ $screen-sm-max: 768px; //スマホ最大
   }
 }
 
+$screen-lg-min: 769px; //タブレット・PC最小
+$screen-sm-max: 768px; //スマホ最大
+@mixin lg-screen {
+  @media screen and (min-width: $screen-lg-min) {
+    @content;
+ }
+}
+@mixin sm-screen {
+  @media screen and (max-width: $screen-sm-max) {
+     @content;
+  }
+}
 // z-index　←奥 | 手前→
 $Z: main, nav, header, modalBackground, modal, alert;

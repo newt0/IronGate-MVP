@@ -1,0 +1,15 @@
+{
+  "ja": {
+    "privacyPolicy": "Privacy Policy",
+    "paragraphFirst": "Privacy Policy, personal information obtained from users in an application operated by RagnaRock Inc. will be managed according to this Privacy Policy.",
+    "heading1": "* Definition of personal information",
+    "heading1Text": "Personal information means information (e.g. name, address, telephone number, email address, gender, date of birth etc.) that individuals can be directly identified thereby and information belonging to the individuals (e.g. usage history, usage fee, interests, interests, interests Field etc.) of the company. In our business, it refers to information (image / voice data) etc which individuals can not directly identify besides this.",
+    "heading2": "1. About personal information collection and information to be provided.",
+    "heading2Text": "Personal information necessary for this service is not transmitted to our server, it is stored only in the device, we do not get personal information. In addition, please contact each advertising company for the personal information necessary to display the advertisement module.",
+    "heading3": "2. About updating Privacy policy",
+    "heading3Text": "We may improve / revise the contents of Privacy policy in response to amendment of relevant laws and ordinances, change of business contents etc, depending on user's request.",
+    "contactMessage": "Please contact us from the form below if you have any questions about our handling of personal information.",
+    "contact": "Contact form",
+    "backToTop": "トップへ戻る"
+  }
+}

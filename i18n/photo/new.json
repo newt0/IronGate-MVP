@@ -1,0 +1,16 @@
+{
+  "ja": {
+    "newPhoto": "新規投稿",
+    "contestLabel": "応募するコンテスト",
+    "contestPlaceholder": "応募するコンテストを選んでください",
+    "titleLabel": "タイトル",
+    "titlePlaceholder": "写真のタイトルを入力してください",
+    "descriptionLabel": "写真の説明",
+    "descriptionPlaceholder": "写真の説明やストーリーを入力",
+    "termsAndConditionsPrefix": "投稿が完了すると",
+    "termsAndConditions": "利用規約",
+    "termsAndConditionsSuffix": "に同意したとみなされます。",
+    "selectPhotoButton": "ファイルを選択",
+    "uploadButton": "写真を投稿"
+  }
+}

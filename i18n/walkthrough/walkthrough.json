@@ -1,0 +1,24 @@
+{
+  "ja": {
+    "walkthrough": [
+      {
+        "walkthroughTitle": "カメコンについて",
+        "walkthroughDetail": "Camecon（カメコン）はどなたでも気軽に応募できるフォトコンテストサイトです。プロ、アマチュア、性別、国籍など一切問いません。機材も自由なので、トイカメラ、スマートフォン等でも大丈夫です。",
+        "firstSlide": ""
+      },
+      {
+        "walkthroughTitle": "テーマについて",
+        "walkthroughDetail": "Cameconでは他のフォトコンには無いクスッと笑えるテーマから定番のテーマまで幅広いテーマを扱うので、あなたに合ったテーマがきっと見つかります。"
+      },
+      {
+        "walkthroughTitle": "投票チケットについて",
+        "walkthroughDetail": "ログインした日数に応じて投票チケットが付与されます。投票チケットは他のユーザーの写真に使え、投票数はコンテストの選考に反映されます。投票チケットの上限はありません。"
+      },
+      {
+        "walkthroughTitle": "入賞について",
+        "walkthroughDetail": "入賞するとCameconオリジナルグッズやAmazonギフト券等ギフトが貰えます。",
+        "goToMyPage": "マイページへ"
+      }
+    ]
+  }
+}
