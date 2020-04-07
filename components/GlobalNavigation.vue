@@ -66,7 +66,7 @@ export default {
         },
         {
           title: "contact",
-          to: ContactFormUrl,
+          to: '/',
           isExternal: true
         }
       ]
