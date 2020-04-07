@@ -32,10 +32,11 @@ export default {
 // !!!グローバル!!!
 // ==========================================================================
 html {
-  font-size: 12px;
+  font-size: (10 / 750 * 100vw);
   background: $Secondary;
-  @include min {
-    font-size: 16px;
+  position: relative;
+  @include LScreen {
+    font-size: 10px;
   }
 }
 body {

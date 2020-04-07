@@ -1,6 +1,8 @@
 <template>
   <div class="page-container">
-    <PostList :posts="posts" />
+    <!-- <PostList :posts="posts" />
+    <PostCardLists :posts="posts"/> -->
+    <MyCard :posts="posts"/>
     <DummyPostList v-if="isFetching" />
     <ButtonMore v-if="hasMorePosts" :handle-click="handleClickMore" />
   </div>
@@ -9,6 +11,8 @@
 <script>
 import { mapState } from 'vuex'
 import PostList from '@/components/PostList'
+import PostCardLists from '@/components/PostCardLists'
+import MyCard from '@/components/MyCard'
 import DummyPostList from '@/components/DummyPostList'
 import ButtonMore from '@/components/ButtonMore'
 
@@ -16,7 +20,9 @@ export default {
   components: {
     PostList,
     DummyPostList,
-    ButtonMore
+    ButtonMore,
+    PostCardLists,
+    MyCard
   },
   props: {
     pageType: String,

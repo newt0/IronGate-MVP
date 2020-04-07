@@ -1,55 +1,30 @@
 <template>
-<article class="post">
-   <ul class="post-list">
-    <li class="post-item post_card" v-for="post in posts" :key="post.sys.id">
+  <div class="post"> 
+    <ul class="post-list">
+    <li v-for="post in posts" :key="post.sys.id" class="post_card">
       <nuxt-link :to="`/entry/${post.sys.id}/`">
-         <span class="post_card_visual">
-           <img :src="post.fields.eyecatch.fields.file.url" alt="">
-         </span>
-          <div class="post_card_info">
+        <span class="post_card_visual">
+          <img :src="post.fields.eyecatch.fields.file.url" alt="test" />
+        </span>
+        <div class="post_card_info">
           <h1 class="post_card_title">{{ post.fields.title }}</h1>
-          <p class="post_card_subInfo">{{ post.fields.readTime }} {{ post.fields.category.fields.name　}}</p>
-        </div>     
-      </nuxt-link> 
+          <p class="post_card_date">{{ post.fields.readTime }} / {{ post.fields.category.fields.name　}}</p>
+        </div>
+      </nuxt-link>
     </li>
-  </ul>
-</article>
- 
+    </ul>
+  </div>
 </template>
 
 <script>
 export default {
   props: {
-    posts: Array
+      posts: Array
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.post {
-  // &-list {
-  // }
-  &-item {
-    font-size: 1.8rem;
-    letter-spacing: 0.12em;
-    @include min {
-      font-size: 2.2rem;
-    }
-    &:nth-child(n + 2) {
-      margin-top: 2rem;
-      @include min {
-        margin-top: 2.5rem;
-      }
-    }
-    a {
-      @include min {
-        &:hover {
-          color: $color-modest;
-        }
-      }
-    }
-  }
-}
 .post {
   padding: (60 / 750 * 100vw) (40 / 750 * 100vw) 0;
   @include LScreen {
@@ -116,7 +91,7 @@ export default {
     font-size: 1.8rem;
   }
 }
-.post_card_subInfo {
+.post_card_date {
   color: $TextSecondary;
   font-size: 2rem;
   display: block;
