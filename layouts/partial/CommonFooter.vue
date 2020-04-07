@@ -2,7 +2,7 @@
   <footer class="footer">
     <ul class="footer_list">
       <li class="footer_item">
-        <a href="https://ragna-rock.com/">company</a>
+        <a href="">company</a>
       </li>
       <li class="footer_item">
         <a href="/terms">term</a>

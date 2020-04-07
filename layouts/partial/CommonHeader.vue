@@ -55,7 +55,7 @@ export default {
   z-index: index($Z, header);
   height: (100 / 750 * 100vw);
   @include LScreen {
-    grid-template-columns: 1fr 94px ((40 + 40 + 21) * 1px);
+    grid-template-columns: 1fr 7fr ((40 + 40 + 21) * 1px);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
     padding: 0 0 0 40px;
     height: 79px;

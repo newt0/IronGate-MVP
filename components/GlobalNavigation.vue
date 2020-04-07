@@ -51,7 +51,7 @@ export default {
       subItems: [
         {
           title: "company",
-          to: 'https://ragna-rock.com/',
+          to: '',
           isExternal: true
         },
         {
